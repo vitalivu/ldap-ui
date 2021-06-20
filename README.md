@@ -25,6 +25,9 @@ Prerequisites:
 * [Python3](https://www.python.org)
 * [pip3](https://packaging.python.org/tutorials/installing-packages/)
 * [python-ldap](https://pypi.org/project/python-ldap/)
+  * The python-ldap is based on OpenLDAP, so you need to have the development files (headers) in order to compile the Python module. If you're on Ubuntu, the package is called libldap2-dev.
+    * Debian/Ubuntu: `apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev`
+    * RedHat/CentOS: `yum install python-devel openldap-devel`
 
 To set up a virtual Python environment in `.venv3` with:
 
